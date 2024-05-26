@@ -1,4 +1,4 @@
-name: Pull request check
+name: Pull requests check
 
 on:
   pull_request:
@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
-      - with:
+        with:
           node-version: 20.x.x
           cache: npm
       - run: npm ci
