@@ -9,7 +9,7 @@ test('test', async ({ page }) => {
   await page.getByRole('button', { name: 'Add course' }).click();
   await expect(page.getByText('Test nametest descriptionRemove')).toBeVisible();
 
-  await page.getByRole('button', { name: 'Remove' }).click();
+  await page.getByText('Test nametest descriptionRemove').getByRole('button', { name: 'Remove' }).click();
 
   await expect(page.getByText('Test nametest descriptionRemove')).not.toBeVisible();
 });
