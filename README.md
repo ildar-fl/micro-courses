@@ -35,3 +35,20 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ```bash
 npx shadcn-ui@latest add avatar dropdown-menu sheet separator skeleton
 ```
+
+## Работа с БД
+
+#### Запустить миграции в бд
+```bash
+npx prisma migrate dev
+```
+#### Сгенерировать клиент
+```bash
+npx prisma generate 
+```
+#### Посмотреть БД
+```bash
+npx prisma studio
+```
+
+
